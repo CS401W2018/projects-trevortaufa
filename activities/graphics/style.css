@@ -5,3 +5,13 @@ body{
 .wave{ 
 
 }
+
+h2{
+    font-size: 17px;
+
+}
+
+p {
+    text-indent: 20px;
+    font-size: 15px;
+}
