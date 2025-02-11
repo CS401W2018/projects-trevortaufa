@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    ;
+    /* background-color: aqua;
+    background-image: url('bluebg.jpg') */
+    background: url('bluebg.jpg') color(srgb 0,255,255);
+}
+
+header {
+    background-image: url('waveclipart.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    color: white;
+    
+}
+
+.mylist{
+    list-style-image: url('markred.png');
+}
+
+hr{
+    color: black;
+}
