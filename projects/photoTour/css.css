@@ -1,0 +1,20 @@
+.mylist{
+    list-style-image: url('flag.png');
+}
+
+header{
+    background-image: url('kangaroo.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('outback.jpg');
+
+}
+
+footer{
+    color: azure;
+}
