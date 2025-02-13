@@ -15,6 +15,10 @@ body{
 
 }
 
+nav{
+    background-color: beige;
+}
+
 footer{
     color: azure;
 }
