@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Positioning</title>
+</head>
+<body>
+    <header></header>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#footer">footer</a>
+    </nav>
+    <main>
+        <h1>Positioning</h1>
+
+        <figure class="flower floating">
+            <img src="flower.jpeg" alt="Flower">
+            <figcaption>Flower</figcaption>
+        </figure>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel hic, repellat sint expedita laborum, asperiores consectetur aut totam quidem consequuntur, corrupti libero commodi deleniti quisquam maxime soluta illo ad doloribus?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum magnam numquam quisquam adipisci, mollitia rerum assumenda earum inventore velit eveniet, odio consequuntur provident eum sequi repellat vel veniam nobis nisi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate odio aspernatur, voluptates porro totam atque provident labore quas quia ipsum eaque aliquid soluta praesentium adipisci, et dolorem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, culpa quasi! Modi quae aut, cum odio harum ea voluptate non voluptatem reprehenderit ab quaerat illum nulla dolores. Nam, sapiente consequatur? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente pariatur exercitationem perspiciatis nam. Dolorem repellendus corrupti sequi sed minima nesciunt qui, vero nobis, voluptatum provident temporibus, quo placeat impedit ut! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, quia sequi magnam, quo quidem illum accusamus eligendi eum, sint dignissimos quae. Dolor repellendus quo eum. Accusantium quisquam magni officia repellat?</p>
+        <div class="clear"></div>
+        <hr>
+        
+        <h2>Engagement</h2>
+        <ol>
+            <li>
+                What is normal flow in HTML?
+                <p>Normal flow is the default layout behavior of elements in HTML. It follows these rules:
+                    <ul> 
+                        <li>Block elements (like <strong>div, p, h1</strong> ) stack vertically from top to bottom.</li>
+                        <li>Inline elements (like <strong>span, a, strong</strong>) flow horizontally inside their containing block.</li>
+                        <li>Elements are positioned based on the document structure unless altered by CSS properties like <strong>float, position</strong> or <strong>display</strong></li>
+                    </ul>
+                </p>
+            </li>
+            <li>
+                What does float do? Why do you need to clear the float?
+                <p>
+                   <strong>Float</strong> allows elements to be taken out of the normal flow and positioned to the left or right of their container. This is often used for text wrapping around images or creating grid-based layouts before Flexbox/Grid. 
+                </p>
+                <p><strong>Clearing float</strong> is necessary because floating elements can cause their parent container to collapse (since the container no longer recognizes their height) </p>
+            </li>
+            <li>
+                What is absolute, fixed and relative?
+                <p><ul>
+                    <li>
+                        <strong>Relative</strong>: Positions an element <em>relative</em> to its normal position (it moves but it still occupies space)
+                    </li>
+                    <li><strong>Absolute</strong>: Positions an element relative to the nearest positioned <em>positioned ancestor</em> (or the viewport if none exist). It is removed from normal flow. </li>
+                    <li><strong>Fixed</strong>: Positions an element <u>relative to the viewport</u>,  meaning it stays in place even when scrolling.</li>
+                </ul>
+
+                </p>
+            </li>
+            <li>
+                How can you make nice navigation buttons for mobile devices?
+                <p>
+                    nav a{
+                        <ul>
+                            <li>display: block;</li>
+                            <li>background-color: aqua;</li>
+                            <li>padding: 10px 5px ;</li>
+                            <li>border-bottom: thin solid white;</li>
+                        </ul>
+                       
+                        
+                        
+                    }
+                </p>
+            </li>
+            <li>
+                Where can you find videos to review what we talked about in class?
+                <p> 
+                    Go to lecture notes for the assignment you're working on
+                </p>
+            </li>
+
+        </ol>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2025 Trevor Taufa </p>
+    </footer>
+</body>
+</html>
