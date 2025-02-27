@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    background-color: rgb(130, 236, 236);
+    justify-content: space-between;
+    /* justify content always goes on the parent */
+    /* space-around will give you space evenly between and will give you half values of between spaces on the edges.  */
+    /* space-evenly will give you even spaces on edges and between*/
+}
+
+nav a{
+    display: block;
+    /* can't add padding without block*/
+    background-color: rgb(68, 237, 170);
+    padding: 10px;
+}
+
+.featured{
+    order: -1;
+}
+
+.parent {
+    background-color: #ffff64;
+    display: flex;
+    flex-direction: row; 
+    /* can do column-reverse */
+    /* can also do row-reverse */
+    flex-wrap: wrap;
+    /* flex-flow: row wrap
+        same as doing the above two lines */
+}
+
+.child {
+    background-color: rgb(211, 112, 211);
+    width: 100px;
+
+}
+
