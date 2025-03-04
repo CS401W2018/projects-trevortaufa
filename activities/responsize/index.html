@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Pages</title>
+    <link rel="stylesheet" href="responsize.css" media="screen">
+    <link rel="stylesheet" href="print.css" media="print">
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+    <main>
+        <h2>Responsive Pages</h2>
+        <div class="row">
+            <div class="card">
+                <figure>
+                    <img src="flower.jpeg" alt="Flower">
+                </figure>
+                <h3>Left</h3>
+                <p>Some text...</p>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="flower1.jpeg" alt="Flower">
+                </figure>
+                <h3>Middle</h3>
+                <p>Some text...</p>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="flower.jpeg" alt="Flower">
+                </figure>
+                <h3>Right</h3>
+                <p>Some text...</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <h3>Engagement</h3>
+        <p><ol>
+            <li>Why is the viewport meta tag important?</li>
+            <p>
+                The viewport meta tag is important for ensuring a website is displayed correctly on different devices, especially on mobile screens. It allows developers to control how a web page is scaled and displayed on various screen sizes.
+            </p>
+            <li>How can you adjust the CSS for printing?</li>
+            <p>Steps to adjust CSS for printing:
+                <ol>
+                    <li>Create another CSS file for the page</li>
+                    <li>Copy and paste the existing CSS code to the printing CSS </li>
+                    <li>Link the printing CSS to the HTML</li>
+                    <li>Add the label 'media="screen'" to the existing CSS link</li>
+                    <li>Add the label 'media="print"' to the Printing CSS link</li>
+                    <li>Adjust CSS to desired look of the printable page.</li>
+                </ol>
+            </p>
+            <li>When would you want to ajdust the CSS for printing?</li>
+            <p>You'd want to adjust the CSS for printing when you need to optimize the layout, readability, and appearance of your web page for printed documents. Web pages are designed for screens, but printed, they can look cluttered, waste ink, or lose important information. Using <strong>print-specific CSS</strong>ensures a cleaner, more professional printed output.</p>
+        </ol></p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Trevor Taufa</p>
+    </footer>
+</body>
+</html>
