@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="tables.css">
+</head>
+<body>
+    <header>
+        <h1>My Class Schedule</h1>
+    </header>
+    <main>
+        <table class="schedule">
+            <thead>
+                <th>Dept.</th><th>Number</th><th>Time</th><th>Location</th><th>Credits</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="5">Information Technology</th>
+                </tr>
+                <tr>
+                    <td>IT</td><td>240</td><td>11AM</td><td rowspan="2">P3</td><td>3</td>
+                </tr>
+                <tr>
+                    <td>IT</td><td>240</td><td>12pm</td><td>3</td>
+                </tr>
+                <tr>
+                    <th colspan="5">Computer Science</th>
+                </tr>
+                <tr>
+                    <td>CS</td><td>210</td><td>11AM</td><td>P1</td><td>3</td>
+                </tr>
+                <tr>
+                    <td>CS</td><td>211</td><td>12pm</td><td>P2</td><td>3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th colspan="4" id="total-credits">Total Credits</th>
+                <td headers="total-credits">12</td>
+            </tfoot>
+        </table>
+    </main>
+
+    
+    <hr>
+
+    <h2>Engagement</h2>
+
+    <ol>
+        <li>When do you use a table?</li>
+            <p>When organizing tabular data, meaning data that is best represented in a grid of rows and columns. Examples include:
+                <ul>
+                    <li>Financial Reports (e.g., sales data, budgets)</li>
+                    <li>Schedules (e.g., class timetables, even agendas)</li>
+                    <li>Comparison Charts (e.g., product feature comparisons)</li>
+                    <li>Data from databases (e.g. employee records, inventory lists)</li>
+                </ul>
+            </p>
+        <li>When do you NOT use a table?</li>
+            <p>Avoid using:
+                <ul>
+                    <li>Layout purposes (Use CSS Flex or Grid)</li>
+                    <li>Non-tabular content</li>
+                    <li>Forms</li>
+                </ul>
+            </p>
+        <li>When do you need to to extra work for table accessibility?</li>
+        <p>You need to improve accessibility when:
+            <ul>
+                <li><strong>Adding headers</strong> - Use "th" (table headers)</li>
+                <li><strong>Providing captions</strong> - Use "caption" tag to describe the table's content</li>
+                <li><strong>Associating headers and data</strong>- Use "id" and "headers" tag attributes for complex tables with multiple layers of headers.</li>
+                <li><strong>Ensuring proper contrast and spacing</strong> - Ensure readable text and spacing for better visibility.</li>
+            </ul>
+        </p>
+    </ol>
+    <footer>
+        <p>&copy; 2025 Trevor Taufa</p>
+    </footer>
+</body>
+</html>
