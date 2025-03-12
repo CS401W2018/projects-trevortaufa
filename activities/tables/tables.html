@@ -8,32 +8,56 @@
 </head>
 <body>
     <header>
-        <h1>My Class Schedule</h1>
+        <h1>Web Design</h1>
     </header>
     <main>
+        <h1>Tables</h1>
         <table class="schedule">
+            <caption>Class Schedule</caption>
             <thead>
                 <th>Dept.</th><th>Number</th><th>Time</th><th>Location</th><th>Credits</th>
             </thead>
             <tbody>
                 <tr>
-                    <th colspan="5">Information Technology</th>
+                    <th colspan="5">Winter 2025</th>
                 </tr>
                 <tr>
-                    <td>IT</td><td>240</td><td>11AM</td><td rowspan="2">P3</td><td>3</td>
+                    <td>IT</td>
+                    <td rowspan="2">240</td>
+                    <td>11AM</td>
+                    <td rowspan="2">P3</td>
+                    <td>3</td>
                 </tr>
                 <tr>
-                    <td>IT</td><td>240</td><td>12pm</td><td>3</td>
+                    <td>IT</td>
+                    <td>12pm</td>
+                    <td>3</td>
                 </tr>
                 <tr>
-                    <th colspan="5">Computer Science</th>
+                    <td>CS</td>
+                    <td>140</td>
+                    <td>11:00-11:50am</td>
+                    <td>P3</td>
+                    <td>3</td>
                 </tr>
                 <tr>
-                    <td>CS</td><td>210</td><td>11AM</td><td>P1</td><td>3</td>
+                    <td>CS</td>
+                    <td>211</td>
+                    <td>12pm</td>
+                    <td>P2</td>
+                    <td>3</td>
                 </tr>
                 <tr>
-                    <td>CS</td><td>211</td><td>12pm</td><td>P2</td><td>3</td>
+                    <th colspan="5">Spring 2025</th>
                 </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>210</td>
+                    <td>11AM</td>
+                    <td>P1</td>
+                    <td>3</td>
+                </tr>
+                
             </tbody>
             <tfoot>
                 <th colspan="4" id="total-credits">Total Credits</th>
@@ -75,6 +99,24 @@
             </ul>
         </p>
     </ol>
+
+    <h2>Engagement Pt 2</h2>
+
+    <ol>
+        <li>
+            Why don't we use border attribute?
+        </li>
+        <p>
+            If you use border attribute, you'll get a HTML Validation error. It's bes to use CSS to add borders.
+        </p>
+        <li>
+            What is the easiest way to color every row
+        </li>
+        <p>
+            Pseude class tr:nth-child(even/odd)
+        </p>
+    </ol>
+
     <footer>
         <p>&copy; 2025 Trevor Taufa</p>
     </footer>
