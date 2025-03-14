@@ -1,0 +1,62 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div .layout{
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    max-width: 1200x;
+    align-items: flex-start;
+    align-content: center;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.feature{
+    order: 1;
+}
+
+aside{
+    width: 30%;
+}
+
+table{
+    width: 60%;
+    box-shadow: 3px 3px 3px rgba(30,30,30,0.5);
+    border-radius: 5px;
+    caption-side: bottom;
+    border: thin solid ;
+    border-collapse: collapse;
+}
+
+caption{
+    margin-top: 10px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #bbb;
+}
+
+thead{
+    background-color: rgb(59, 59, 167);
+    color:white;
+}
+
+td,th{
+    padding: 5px;
+    border: thin solid black;
+}
+
+tfoot{
+    text-align: center;
+    border: thin solid black;
+}
+
+.out{
+    background-color: rgb(221, 73, 73);
+}
+
+.in{
+    background-color: rgb(21, 204, 21);
+}
