@@ -53,27 +53,50 @@
             <li>
                 The form tag has an "action" attribute. What does it do?
                 <p>
-                    
+                    The action attribute specifies the URL where the form's data should be sent the when the form is submitted. In this current page, the action is set to "processing.html" meaning that the data is sent to that page. (In this case it is non existent).
                 </p>
             </li>
             <li>
                 The form tag has a "method" attribute. What does it do?  
                 <p>
-                    Changes post and get
+                    The method attribute specifies how the form data should be sent to the server when the form is submitted. This is either done through FORM or GET (GET by default.)
                 </p>         
             </li>
             <li>
                 What is the difference between a "POST" and a "GET"?
                 <p>
                     <ul>
-                        <li>POST</li>
-                        <li>GET</li>
+                        <li>POST
+                            <ul>
+                                <li>Sends form data in the request body (not in the URL)</li>
+                                <li>Suitable for sensitive data (e.g., passwords) or when sending large amounts of data.</li>
+                            </ul>
+                        </li>
+                        
+                       
+                        <li>GET
+                            <ul>
+                                <li>Appends form data to the URL</li>
+                                <li>Suitable for simple searches or when data is not sensitive (e.g. Google searches)</li>
+                                
+                            </ul>
+                        </li>
+                        
+                        <br>
+
+                        <li>When to Use:
+                            <ul>
+                                <li>Use GET for retrieving data (e.g., search forms)</li>
+                                <li>Use POST for sumbitting sensitive or large data (e.g., login, registration).</li>
+                            </ul>
+                        </li>
+                       
                     </ul>
                 </p>
             </li>
         </ol>
 
-        Notes:
+        Class Notes:
         <p>If you're going to change information, use POST.
             <ul>
                 <li>POST does not retain information in URL</li>
@@ -85,9 +108,9 @@
         <br>
         <p>"value" inside the input pre-loads information.</p>
         <p>"selected" in option pre-loads the option.</p>
-        <p>"required" </p>
+        <p>"required": used in the password form </p>
         <br>
-        <p>"placeholder"</p>
+        <p>"placeholder": used in the email form</p>
     </main>
     <footer>
         <p>&copy; 2025 Trevor Taufa</p>
