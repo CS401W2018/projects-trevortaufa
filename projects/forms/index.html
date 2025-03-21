@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Sign Up</h1>
+    </header>
+    <main>
+        <fieldset>
+            <legend>Register</legend>
+        <form action="processing.html" method="post">
+            <div class="form-row">
+                <label for="fname">Full Name:</label> <input type="fname" name="fname" id="fname" placeholder="John Appleseed">
+            </div>
+            <div class="form-row">
+                <label for="emailInput">Email:</label>
+                <input type="email" name="email" id="emailInput" placeholder="example@email.com">
+            </div>
+            <div class="form-row">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            
+            <div class="form-row">
+                <label for="dateInput">Birthdate:</label>
+                <input type="date" name="birthdate" id="dateInput">
+            </div>
+           
+            <div class="check-row">
+                <div class="spacer"><label for="gender">Gender:</label></div>
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="female">Female</label>
+                <label><input type="radio" name="gender" value="other">Other</label>
+            </div>
+
+            <div class="form-row">
+                <label for="">State:</label>
+                <select name="state" id="password">
+                    <option value="ca">California</option>
+                    <option value="hi" selected>Hawaii</option>
+                    <option value="ut">Utah</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label for="about">Comments:</label>
+                <textarea name="comment" id="comment"></textarea>
+            </div>
+
+            <div class="check-row">
+                <div class="spacer"></div>
+                <label for="agree"><input type="checkbox" name="agree" id="agree" required>I agree to the terms</label>
+                
+            </div>
+            <div class="form-row">
+                <div class="spacer"></div>
+                <input type="submit" name="" id="">
+            </div>
+        </form>
+        </fieldset>
+    </main>
+    <footer>
+        <p>&copy; 2025 Trevor Taufa</p>
+    </footer>
+    
+</body>
+</html>
