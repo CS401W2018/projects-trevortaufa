@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+    <main>
+        <form action="processing.html" method="post" id="myForm">
+            First Name: <input type="text" id="firstName" name="first" placeholder="First Name"><br>
+            Last Name: <input type="text" id="lastName" name="last" placeholder="Last Name"><br>
+            Password: <input type="password" name="pass" id="password"><br>
+            <input type="checkbox" name="remember" checked id="remember">Remember Me <br>
+            Age: <input type="number" name="age" id="age"><br>
+            Class:
+            <input type="radio" value="freshman">Freshman <br>
+            <input type="radio" value="sophomore">Sophomore <br> 
+            <input type="radio" value="junior">Junior <br>
+            <input type="radio" value="senior">Senior <br>
+            State: <select name="state" id="state">
+                <option value="blank" disabled selected>Make Selection</option>
+                <option value="hi">Hawaii</option>
+                <option value="ca">California</option>
+                <option value="co">Colorado</option>
+                <option value="ut">Utah</option>
+            </select><br>
+            <input type="submit">
+        </form>
+
+        <hr>
+
+        <h2>Engagement</h2>
+
+        <ol>
+            <li>What is JavaScript? How did it get its name?</li>
+                <p>
+                    <strong>JavaScript</strong> is a versatile programming language primarily used for web development. It was originally called <strong>Mocha</strong>, then <strong>LiveScript</strong>, before being renamed to <strong>JavaScript</strong> by Netscape to capitalize on Java's popularity, ene though the two languages are not related.
+                </p>
+            <li>What are the two ways you can run JavaScript?</li>
+                <p>
+                    You can run JavaScript in two main ways:
+                    <ul>
+                        <li>
+                            <strong>Inside a web browser </strong>(where it controls webpage behavior, like animations and interactivity)
+                        </li>
+                        <li>
+                            <strong>on a server using Node.js</strong>, which allows JavaScript to handle backend logic, databases and APIs.
+                        </li>
+                    </ul>
+                </p>
+            <li>What was the most popular front-end js library?</li>
+                <p>
+                    <strong>JQuery</strong> was the most popular front-end JavaScript library, simplifying DOM manipulation, animations, and AJAX requests. It was widely used in the 2000s and early 2010s because is amde JavaScript mroe accessible and worked across different browsers.
+                </p>
+            <li>What is the most popular front-end js library today?</li>
+                <p>
+                    <strong>React</strong>, developed by Facebook (now Meta), is the most popular front-end JavaScript library today. It uses a component-based architecture and a virtual DOM, making it efficient for building interactive and scalable web applications.
+                </p>
+        </ol>
+    </main>
+    <footer>
+        <p>&copy; 2025 Trevor Taufa</p>
+    </footer>
+    <script>
+        document.getElementById("myForm").addEventListener("submit",function(event){
+            event.preventDefault();
+            const first = document.getElementById("firstName").value;
+            const last = document.getElementById("lastName").value;
+            const age = document.getElementById("age").value;
+
+            // ! means not
+                // meaning if missing
+
+            if (!first || !last) {
+                alert("Please provide your full name.");
+                return;
+            }
+
+            if (!age || age<18){
+                alert("You must be 18 years or older to submit this form.");
+                return;
+            }
+
+            // console.log(first);
+            // console.log(last);
+
+            const data = {
+                firstName: first,
+                lastName: last
+            }
+
+            console.log(data);;
+        })
+    </script>
+    
+</body>
+</html>
