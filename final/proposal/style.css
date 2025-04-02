@@ -1,0 +1,35 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 10px;
+    width: 50px;
+    
+
+}
+
+nav a{
+    background-color: aquamarine;
+    justify-content: center;
+    text-align: center;
+    
+
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    
+}
+
+.question{
+    font-weight: bold
+}
+
+.answer{
+    font-weight: normal;
+}
+
+footer{
+    font: italic;
+}
