@@ -11,10 +11,12 @@
         <h1>Web Design</h1>
     </header>
     <main>
+        
         <fieldset>
             <legend>
                 Create an Account
             </legend>
+            <div id="message"></div>
             <form action="processing.html" method="post" id="myForm">
                 First Name: <input type="text" id="firstName" name="first" placeholder="First Name"><br>
                 Last Name: <input type="text" id="lastName" name="last" placeholder="Last Name"><br>
@@ -71,37 +73,7 @@
     <footer>
         <p>&copy; 2025 Trevor Taufa</p>
     </footer>
-    <script>
-        document.getElementById("myForm").addEventListener("submit",function(event){
-            event.preventDefault();
-            const first = document.getElementById("firstName").value;
-            const last = document.getElementById("lastName").value;
-            const age = document.getElementById("age").value;
-
-            // ! means not
-                // meaning if missing
-
-            if (!first || !last) {
-                alert("Please provide your full name.");
-                return;
-            }
-
-            if (!age || age<18){
-                alert("You must be 18 years or older to submit this form.");
-                return;
-            }
-
-            // console.log(first);
-            // console.log(last);
-
-            const data = {
-                firstName: first,
-                lastName: last
-            }
-
-            console.log(data);;
-        })
-    </script>
+    <script src="form.js"></script>
     
 </body>
 </html>

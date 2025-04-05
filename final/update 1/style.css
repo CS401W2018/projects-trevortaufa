@@ -1,0 +1,123 @@
+nav{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+}
+
+nav a{
+    border: thin solid;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    
+
+}
+
+nav a:hover{
+    color: white;
+    background-color: black;
+    justify-content: center;
+}
+
+.currentpage{
+    text-decoration: underline;
+    border: none;
+
+}
+
+.main {
+    
+    
+    
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serifs;
+}
+.form-row, .check-row{
+    display: flex;
+    gap: 10px;
+    text-align: right;
+    margin: 10px 0;
+}
+
+.form-row label{
+    width: 150px;
+    text-align: right;
+}
+
+.spacer{
+    width: 150px;
+}
+
+input:not([type='submit']), select, textarea{
+    padding: 10px;    
+    font-size: 1.5em;
+    border-radius: 3px;
+    background-color: #aaa;
+}
+
+input:not([type='submit']):focus, select:focus, textarea:focus{
+    background-color:white ;
+}
+
+input[type='submit']{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 3px rgba(200, 200, 200, 50%);
+}
+
+fieldset{
+    box-shadow: 5px 5px 3px rgba(200, 200, 200, 50%);
+}
+
+legend{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+}
+
+
+header{
+    order: +1;
+    text-align: center;
+    padding: 20px;
+}
+
+table, th, td{
+    border: thin solid black;
+    padding: 9px;
+    border-radius: 3px;
+}
+
+
+@media ONLY screen AND (max-width:700px){
+    nav {
+        display: flex;
+        flex-direction: column;
+        max-width: 700px
+    }
+    
+    nav a{
+        padding: 40px;
+        font-size: xx-large;
+    }
+
+    .form-row, .check-row{
+        flex-direction: column;
+    }
+
+    .form-row label, .check-row label{
+        text-align: left;
+    }
+
+    .spacer {
+        text-align: left;
+    }
+
+
+}
