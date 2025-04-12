@@ -1,3 +1,5 @@
+/* Navigation */
+
 nav{
     display: flex;
     gap: 10px;
@@ -27,15 +29,19 @@ nav a:hover{
 
 }
 
-.main {
-    
-    
-    
+header{
+    order: 1;
+    text-align: center;
+    padding: 5px;
+    background-color: aliceblue;
+    border-radius: 5px;
 }
 
 body{
     font-family: Arial, Helvetica, sans-serifs;
 }
+
+/* Table */
 .form-row, .check-row{
     display: flex;
     gap: 10px;
@@ -52,6 +58,7 @@ body{
     width: 150px;
 }
 
+/* Form */
 input:not([type='submit']), select, textarea{
     padding: 10px;    
     font-size: 1.5em;
@@ -82,11 +89,52 @@ legend{
 }
 
 
-header{
-    order: +1;
-    text-align: center;
-    padding: 20px;
+/* page layout */
+main{
+    display: flex;
+    flex-direction: column;
 }
+
+main{
+    background-color: lightblue;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+.right{
+    text-align: right;
+    background-color: rgb(229, 229, 237);
+}
+
+.float-image-r{
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.centertext{
+    text-align: center;
+}
+
+.left{
+    
+}
+
+.float-image-l{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
 
 table, th, td{
     border: thin solid black;
@@ -104,7 +152,7 @@ table, th, td{
     
     nav a{
         padding: 40px;
-        font-size: xx-large;
+        font-size: x-large;
     }
 
     .form-row, .check-row{
